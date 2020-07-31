@@ -25,6 +25,7 @@ class CounterView extends StatelessWidget {
             child: Icon(Icons.add),
             onPressed: () => context.bloc<CounterCubit>().increment(),
           ),
+          SizedBox(height: 10),
           FloatingActionButton(
             child: Icon(Icons.remove),
             onPressed: () => context.bloc<CounterCubit>().decrement(),
