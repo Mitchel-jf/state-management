@@ -34,7 +34,6 @@ class Timer extends StatelessWidget {
                           .floor()
                           .toString()
                           .padLeft(2, '0');
-
                       final secondstr = (state.duration % 60)
                           .floor()
                           .toString()

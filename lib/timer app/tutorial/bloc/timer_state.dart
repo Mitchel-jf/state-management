@@ -34,7 +34,7 @@ abstract class TimerState extends Equatable {
 ///
 /// if the state is [TimerInitial] the user will be able to start the timer.
 class TimerInitial extends TimerState {
-  TimerInitial(int duration) : super(duration);
+  const TimerInitial(int duration) : super(duration);
 
   @override
   String toString() => 'TimerInitial { duration: $duration }';
@@ -45,7 +45,7 @@ class TimerInitial extends TimerState {
 /// if the state is [TimerRunPause] the user will
 /// be able to resume the timer and reset the timer.
 class TimerRunPause extends TimerState {
-  TimerRunPause(int duration) : super(duration);
+  const TimerRunPause(int duration) : super(duration);
 
   @override
   String toString() => 'TimerRunPause { duration: $duration }';
@@ -56,7 +56,7 @@ class TimerRunPause extends TimerState {
 /// if the state is [TimerRunInProgress] the user will be able to pause
 /// and reset the timer as well as see the remaining duration.
 class TimerRunInProgress extends TimerState {
-  TimerRunInProgress(int duration) : super(duration);
+  const TimerRunInProgress(int duration) : super(duration);
 
   @override
   String toString() => 'TimerRunInProgress { duration: $duration }';
@@ -66,8 +66,10 @@ class TimerRunInProgress extends TimerState {
 ///
 /// if the state is [TimerRunComplete] the user will be able to reset the timer.
 class TimerRunComplete extends TimerState {
-  TimerRunComplete() : super(0);
+  const TimerRunComplete() : super(0);
 
   @override
   String toString() => 'TimerRunComplete { duration: $duration }';
 }
+
+// 6005135385172266136
